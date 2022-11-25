@@ -1,11 +1,7 @@
-import { BaseKernel, Request, Response } from "@webtypen/webframez-core";
+import { BaseKernelWeb, Request, Response } from "@webtypen/webframez-core";
 import { TestController } from "./Controller/TestController";
 
-export class Kernel extends BaseKernel {
-  static comamnds = [
-    // Register commands here ...
-  ];
-
+export class Kernel extends BaseKernelWeb {
   static controller: { [key: string]: any } = {
     TestController: TestController,
   };
